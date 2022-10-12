@@ -41,15 +41,16 @@ public class searchClass {
         {
             soft.assertTrue(ele.productname().get(i).getText().toLowerCase().contains(search));
         }
-
+    soft.assertAll();
     }
     @Then("product shows by sku")
     public void check_search_result_by_sku()
     {
+
         for(int i =0; i<ele.productname().size();i++)
         {
-            Assert.assertTrue(ele.productname().get(i).getText().toLowerCase().contains(search));
+            soft.assertTrue(ele.productname().get(i).getText().toLowerCase().contains(search));
         }
-
+        soft.assertAll();
     }
 }

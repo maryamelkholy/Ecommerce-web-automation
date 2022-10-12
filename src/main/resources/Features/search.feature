@@ -11,13 +11,13 @@ Feature: search items
     |nike  |
     |book  |
 
-  Scenario Outline: search items by sku
-    Given user is inside homepage
-    When user enters product "<sku>"
-    Then product shows by sku
-
-    Examples:
-      |sku|
-      |SCI_FAITH|
-      |APPLE_CAM|
-      |SF_PRO_11|
+#  Scenario Outline: search items by sku
+#    Given user is inside homepage
+#    When user enters product "<sku>"
+#    Then product shows by sku
+#
+#    Examples:
+#      |sku|
+#      |SCI_FAITH|
+##      |APPLE_CAM|
+##      |SF_PRO_11|

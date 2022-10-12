@@ -22,7 +22,7 @@ public class regClass {
 
     @When("user select gender type")
     public void selectGender() throws InterruptedException {
-        System.out.println("gender reveal");
+        ele.Registerbutton().click();
         ele.gender().click();
 
     }

@@ -26,7 +26,7 @@ public class SliderClass {
     public void directed_to_nokia_successfully()
     {
         soft.assertTrue(Hooks.driver.getCurrentUrl().contains("nokia-lumia-1020"));
-        soft.assertAll();
+
     }
     @When("user clicks on iphone slider")
     public void check_if_it_is_iphone() throws InterruptedException {

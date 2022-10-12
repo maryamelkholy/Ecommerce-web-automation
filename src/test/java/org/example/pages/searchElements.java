@@ -23,6 +23,16 @@ public class searchElements {
 
 
 
+    public WebElement searchbarnew()
+    {
+
+        return Hooks.driver.findElement(By.cssSelector("input[class=\"search-text\"]"));
+
+
+
+
+    }
+
     public List<WebElement> productname() {
         return Hooks.driver.findElements(By.className("product-title"));
     }

@@ -1,5 +1,5 @@
 @smoke
-Feature: facebook
+Feature: follow us on social media
   Scenario: facebook
     Given user is in the homepage for follow
     When user clicks on facebook icon

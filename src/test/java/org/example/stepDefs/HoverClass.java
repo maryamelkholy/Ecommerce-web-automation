@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.HoverElements;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import static org.example.stepDefs.Hooks.driver;
@@ -36,8 +37,8 @@ public class HoverClass {
     public void check_user_reached_safely()
      {
 
-         soft.assertTrue(chosenElement.contains(ele.subCategoryTitle().getText().toLowerCase().trim()));
-         soft.assertAll();
+         soft.assertTrue(chosenElement.toLowerCase().contains(ele.subCategoryTitle().getText().toLowerCase().trim()));
+        soft.assertAll();
      }
 
 
